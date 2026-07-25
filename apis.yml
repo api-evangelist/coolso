@@ -1,7 +1,24 @@
 aid: coolso
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/coolso.png
 name: Coolso
-description: Coolso is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Coolso develops wearable gesture-recognition technology. Using patented sensing that detects
+  muscle-vibration signals processed through its own AI model, Coolso recognizes individual finger movements
+  and strength levels with low-latency response, from a wrist-worn device or an ordinary smartwatch's
+  accelerometer and gyroscope without dedicated hardware. Founded by Sheng-Kuei Hsu, Wei-Lin Lee, and Jack Wu
+  and based in Cambridge, Massachusetts, the seed-stage company is backed by 500 Global and Alchemist
+  Accelerator and targets AR/VR interaction, with potential expansion into medical rehabilitation and sports
+  equipment. Coolso publishes no public API, SDK, or developer portal at this time.
 url: https://raw.githubusercontent.com/api-evangelist/coolso/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Wearables
+- Gesture Recognition
+- Artificial Intelligence
+- Sensors
+- Augmented Reality
+- Virtual Reality
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/coolso-domain-security.yml
 - type: Website
   url: https://coolsotech.com
+- type: Blog
+  url: https://coolsotech.com/news/
+- type: Support
+  url: https://coolsotech.com/contact/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
